@@ -1,0 +1,104 @@
+.skills-page-window {
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.tab-nav {
+    display: flex;
+    gap: 10px;
+    border-bottom: 2px solid var(--cor-neon-cyan);
+    padding: 0 10px;
+    margin-bottom: 25px;
+    font-size: 1rem;
+}
+
+.tab-button {
+    background: none;
+    border: none;
+    color: var(--cor-texto-principal);
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.tab-button:hover {
+    color: var(--cor-neon-cyan);
+}
+
+.tab-button.active {
+    color: var(--cor-neon-magenta);
+    border-bottom-color: var(--cor-neon-magenta);
+}
+
+/* --- Conteúdo das Abas --- */
+.tab-content {
+    display: none; 
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out;
+}
+
+.tab-content.active {
+    display: block; 
+    opacity: 1; 
+}
+
+.tab-description {
+    color: var(--cor-texto-principal);
+    margin-bottom: 30px;
+    border-left: 3px solid var(--cor-neon-cyan);
+    padding-left: 15px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* --- Matriz de Habilidades --- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.skill-category .category-title {
+    color: var(--cor-neon-cyan);
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    font-size: 1rem;
+}
+
+.skill-list-icons { list-style: none; padding-left: 0; }
+.skill-list-icons li { 
+    display: flex; 
+    align-items: center; 
+    gap: 12px; 
+    margin-bottom: 20px; 
+    font-size: 1rem; 
+}
+
+.skill-icon { 
+    width: 52px; 
+    height: 52px; 
+}
+
+.log-list { list-style: none; padding-left: 0; }
+.log-list li { 
+    margin-bottom: 20px; 
+    line-height: 1.8; 
+    font-size: 1rem;
+}
+
+.skill-category {
+    background-color: rgba(0, 0, 0, 0.7); 
+    border: 1px solid var(--cor-neon-cyan-transparente, rgba(0, 246, 255, 0.2));
+    border-radius: 4px; 
+}
+
+
+.log-list {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border: 1px solid var(--cor-neon-cyan-transparente, rgba(0, 246, 255, 0.2));
+    border-radius: 4px;
+}
